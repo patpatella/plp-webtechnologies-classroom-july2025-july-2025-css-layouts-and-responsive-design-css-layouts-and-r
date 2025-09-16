@@ -1,0 +1,97 @@
+/* style.css */
+
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header.site-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .nav-bar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+  }
+  
+  .nav-bar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Main Layout using CSS Grid */
+  .main-layout {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* Sidebar */
+  .sidebar {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Content Area */
+  .content-area {
+    background-color: #fff;
+    padding: 15px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Cards using Flexbox */
+  .cards-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background-color: #e7f3fe;
+    padding: 15px;
+    border: 1px solid #2196F3;
+    flex: 1 1 200px; /* flex-grow, flex-shrink, flex-basis */
+    text-align: center;
+  }
+  
+  .card h3 {
+    margin-top: 0;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .main-layout {
+      grid-template-columns: 1fr;
+    }
+  
+    .nav-bar ul {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .cards-container {
+      flex-direction: column;
+    }
+  }
+  
